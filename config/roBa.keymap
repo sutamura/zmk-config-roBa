@@ -56,15 +56,6 @@
             tapping-term-ms = <200>;
         };
 
-        Layer_tap: Layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP";
-            #binding-cells = <2>;
-            retro-tap;
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&kp>;
-        };
-
         SandS: SandS {
             compatible = "zmk,behavior-hold-tap";
             label = "SANDS";
@@ -83,7 +74,7 @@
             bindings = <
 &kp F  &kp P         &kp D         &kp L  &kp X                                              &kp SEMICOLON  &kp U       &kp O    &kp Y      &kp Q
 &kp S  &kp N         &kp T         &kp H  &kp K  &kp LS(LG(S))                &kp COMMA      &kp COMMA      &kp A       &kp E    &kp I      &kp C
-&kp V  &kp W         &kp G         &kp M  &kp J  &kp COLON                    &kp MINUS      &kp MINUS      &kp PERIOD  &kp SQT  &kp EQUAL  &none
+&kp V  &kp W         &kp G         &kp M  &kp J  &kp COLON                    &kp MINUS      &kp MINUS      &kp PERIOD  &kp SQT  &kp EQUAL  &lt 3 SLASH
 &mo 2  &kp LEFT_WIN  &kp LEFT_ALT  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE      &kp BACKSPACE  &kp B                                          &mo 1
             >;
 
