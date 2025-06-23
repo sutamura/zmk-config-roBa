@@ -25,6 +25,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <30 31>;
         };
+
+        Meh {
+            bindings = <&kp LA(LC(LEFT_SHIFT))>;
+            key-positions = <10 11 12>;
+        };
     };
 
     macros {
@@ -62,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp F                 &kp P         &kp D  &kp L  &kp X                                                     &kp SEMICOLON  &kp U       &kp O    &kp Y      &kp Q
-&kp S                 &kp N         &kp T  &kp H  &kp K                    &kp C_MUTE        &none          &kp COMMA      &kp A       &kp E    &kp I      &kp C
-&kp V                 &kp W         &kp G  &kp M  &kp J                    &none             &none          &kp MINUS      &kp PERIOD  &kp SQT  &kp EQUAL  &lt 2 SLASH
-&kp LS(LC(LEFT_ALT))  &kp LEFT_WIN  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE  &kp LEFT_GUI      &kp BACKSPACE  &kp B                                          &mo 1
+&kp F      &kp P         &kp D  &kp L  &kp X                                                     &kp SEMICOLON  &kp U       &kp O    &kp Y      &kp Q
+&kp S      &kp N         &kp T  &kp H  &kp K                    &kp C_MUTE        &none          &kp COMMA      &kp A       &kp E    &kp I      &kp C
+&kp V      &kp W         &kp G  &kp M  &kp J                    &none             &mo 1          &kp MINUS      &kp PERIOD  &kp SQT  &kp EQUAL  &lt 2 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE  &kp LEFT_GUI      &kp BACKSPACE  &kp B                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp A C_VOLUME_DOWN>;
