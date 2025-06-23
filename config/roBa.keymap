@@ -87,7 +87,7 @@
 &mo 2  &kp LEFT_WIN  &kp LEFT_ALT  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE      &kp BACKSPACE  &kp B                                          &mo 1
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp A C_VOLUME_DOWN>;
         };
 
         num {
