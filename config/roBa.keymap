@@ -25,6 +25,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <30 31>;
         };
+
+        SKK_kana {
+            bindings = <&kp LC(X)>;
+            key-positions = <4 2>;
+        };
+
+        arc_tab_shift {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <1 2>;
+        };
     };
 
     macros {
@@ -62,10 +72,10 @@
 
         default_layer {
             bindings = <
-&kp F      &kp P           &kp D  &kp L  &kp X                                                               &kp SEMICOLON  &kp U       &kp O    &kp Y      &kp Q
+&kp F      &SandS LCTRL P  &kp D  &kp L  &kp X                                                               &kp SEMICOLON  &kp U       &kp O    &kp Y      &kp Q
 &kp S      &kp N           &kp T  &kp H  &kp K                    &kp C_MUTE                  &kp RIGHT_ALT  &kp COMMA      &kp A       &kp E    &kp I      &kp C
 &kp V      &kp W           &kp G  &kp M  &kp J                    &kp LA(LC(LEFT_SHIFT))      &kp RIGHT_GUI  &kp MINUS      &kp PERIOD  &kp SQT  &kp EQUAL  &kp SLASH
-&kp LCTRL  &kp LEFT_SHIFT  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE  &lt 2 ENTER                 &kp BACKSPACE  &kp B                                          &mo 1
+&kp LCTRL  &kp LEFT_SHIFT  &kp Z  &kp R  &SandS LEFT_SHIFT SPACE  &lt 2 ENTER                 &kp B          &kp BACKSPACE                                  &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp A C_VOLUME_DOWN>;
