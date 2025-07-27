@@ -27,29 +27,29 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <13 18>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <12 19>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        CTRL+SHIFT {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <1 2>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        CTRL {
+            bindings = <&kp LCTRL>;
+            key-positions = <0 1>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        Sleep {
+            bindings = <&kp LG(LS(F14))>;
+            key-positions = <0 1 2 3 4>;
         };
     };
 
@@ -78,31 +78,33 @@
 
         default_layer {
             bindings = <
-&kp F                   &kp P      &kp D  &kp L  &kp X                                  &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
-&kp S                   &kp N      &kp T  &kp H  &kp K  &kp SPACE      &kp SPACE        &kp COMMA  &kp A    &kp E     &kp I      &kp C
-&kp V                   &kp W      &kp G  &kp M  &kp J  &kp SPACE      &kp SPACE        &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
-&kp LA(LC(LEFT_SHIFT))  &kp SPACE  &kp Z  &kp Z  &kp R  &kp SPACE      &lt 1 BACKSPACE  &kp B                                    &kp ENTER
+&kp F                   &kp P    &kp D  &kp L  &kp X                                     &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
+&kp S                   &kp N    &kp T  &kp H  &kp K  &kp C_MUTE        &kp SPACE        &kp COMMA  &kp A    &kp E     &kp I      &kp C
+&kp V                   &kp W    &kp G  &kp M  &kp J  &kp LEFT_GUI      &kp RIGHT_GUI    &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
+&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp Z  &kp Z  &kp R  &lt 2 SPACE       &lt 1 BACKSPACE  &kp B                                    &kp ENTER
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         num {
             bindings = <
-&kp TAB   &kp N7  &kp N8     &kp N9   &kp ASTERISK                        &kp TAB   &kp N7  &kp N8  &kp N9  &kp ASTERISK
-&kp BSPC  &kp N4  &kp N5     &kp N6   &kp MINUS     &none          &none  &kp BSPC  &kp N4  &kp N5  &kp N6  &kp MINUS
-&none     &kp N1  &kp N2     &kp N3   &kp PLUS      &none          &none  &none     &kp N1  &kp N2  &kp N3  &kp PLUS
-&none     &kp N0  &kp COMMA  &kp DOT  &kp SLASH     &kp ENTER      &none  &kp N0                            &kp SLASH
+&kp TAB   &kp N7  &kp N8     &kp N9   &kp ASTERISK                            &kp TAB   &kp N7  &kp N8  &kp N9  &kp ASTERISK
+&kp BSPC  &kp N4  &kp N5     &kp N6   &kp MINUS     &none          &kp LG(C)  &kp BSPC  &kp N4  &kp N5  &kp N6  &kp MINUS
+&none     &kp N1  &kp N2     &kp N3   &kp PLUS      &none          &kp LG(P)  &none     &kp N1  &kp N2  &kp N3  &kp PLUS
+&none     &kp N0  &kp COMMA  &kp DOT  &kp SLASH     &kp ENTER      &none      &kp N0                            &kp SLASH
             >;
         };
 
         sp {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans    &kp UP_ARROW  &kp DOUBLE_QUOTES  &kp LEFT_BRACE                                       &kp RIGHT_BRACE        &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp LEFT  &kp DOWN      &kp RIGHT          &kp LEFT_PARENTHESIS  &kp C_PLAY      &trans         &kp RIGHT_PARENTHESIS  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &trans    &trans        &trans             &kp LEFT_BRACKET      &trans          &trans         &kp RIGHT_BRACKET      &kp F1  &kp F2   &kp F3   &kp F4
+&trans  &trans    &trans        &trans             &trans                &trans          &kp BACKSPACE  &trans                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_PREVIOUS C_NEXT>;
         };
     };
 };
