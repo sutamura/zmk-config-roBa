@@ -91,7 +91,7 @@
             bindings = <
 &kp F                   &kp P    &kp D  &kp L  &kp X                                     &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
 &kp S                   &kp N    &kp T  &kp H  &kp K  &kp C_MUTE        &kp SPACE        &kp COMMA  &kp A    &kp E     &kp I      &kp C
-&kp V                   &kp W    &kp G  &kp M  &kp J  &kp LEFT_GUI      &kp RIGHT_GUI    &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
+&kp V                   &kp W    &kp G  &kp M  &kp J  &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
 &kp LA(LC(LEFT_SHIFT))  &kp TAB  &none  &kp Z  &kp R  &lt 2 SPACE       &lt 1 BACKSPACE  &kp B                                    &kp ENTER
             >;
 
@@ -105,6 +105,8 @@
 &none     &kp N1  &kp N2     &kp N3   &kp PLUS      &none          &kp LG(P)  &none     &kp N1  &kp N2  &kp N3  &kp PLUS
 &none     &kp N0  &kp COMMA  &kp DOT  &kp SLASH     &kp ENTER      &none      &kp N0                            &kp SLASH
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         sp {
