@@ -62,6 +62,11 @@
             bindings = <&mkp MB2>;
             key-positions = <24 25>;
         };
+
+        CtrlX {
+            bindings = <&kp LC(X)>;
+            key-positions = <2 4>;
+        };
     };
 
     macros {
@@ -90,7 +95,8 @@
 
             #binding-cells = <2>;
             retro-tap;
-            tapping-term-ms = <1>;
+            tapping-term-ms = <1000>;
+            flavor = "tap-preferred";
         };
     };
 
