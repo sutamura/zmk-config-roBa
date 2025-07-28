@@ -28,11 +28,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <12 19>;
-        };
-
         CTRL+SHIFT {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <1 2>;
@@ -60,7 +55,7 @@
 
         CtrlX {
             bindings = <&kp LC(X)>;
-            key-positions = <2 4>;
+            key-positions = <4 1>;
         };
     };
 
