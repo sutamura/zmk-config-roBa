@@ -28,11 +28,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <13 18>;
-        };
-
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <12 19>;
@@ -105,10 +100,10 @@
 
         default_layer {
             bindings = <
-&kp F                   &kp P    &kp D      &kp L  &kp X                                                       &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
-&kp S                   &kp N    &kp T      &kp H  &kp K                    &kp C_MUTE        &kp ESCAPE       &kp COMMA  &kp A    &kp E     &kp I      &kp C
-&kp V                   &kp W    &kp G      &kp M  &kp J                    &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
-&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp ENTER  &kp Z  &holdshift LEFT_SHIFT R  &lt 2 SPACE       &lt 1 BACKSPACE  &kp B                                    &kp DELETE
+&kp F                   &kp P    &kp D  &kp L  &kp X                                                           &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
+&kp S                   &kp N    &kp T  &kp H  &kp K                        &kp C_MUTE        &kp ESCAPE       &kp COMMA  &kp A    &kp E     &kp I      &kp C
+&kp V                   &kp W    &kp G  &kp M  &kp J                        &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
+&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp Z  &kp R  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER       &lt 1 BACKSPACE  &kp B                                    &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
