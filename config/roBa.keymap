@@ -82,6 +82,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        holdshift: holdshift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDSHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            retro-tap;
+            tapping-term-ms = <1>;
+        };
     };
 
     keymap {
@@ -89,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp F                   &kp P    &kp D  &kp L  &kp X                                     &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
-&kp S                   &kp N    &kp T  &kp H  &kp K  &kp C_MUTE        &kp SPACE        &kp COMMA  &kp A    &kp E     &kp I      &kp C
-&kp V                   &kp W    &kp G  &kp M  &kp J  &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
-&kp LA(LC(LEFT_SHIFT))  &kp TAB  &none  &kp Z  &kp R  &lt 2 SPACE       &lt 1 BACKSPACE  &kp B                                    &kp ENTER
+&kp F                   &kp P    &kp D      &kp L  &kp X                                                       &kp SEMI   &kp U    &kp O     &kp Y      &kp Q
+&kp S                   &kp N    &kp T      &kp H  &kp K                    &kp C_MUTE        &kp SPACE        &kp COMMA  &kp A    &kp E     &kp I      &kp C
+&kp V                   &kp W    &kp G      &kp M  &kp J                    &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
+&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp ENTER  &kp Z  &holdshift LEFT_SHIFT R  &lt 2 SPACE       &lt 1 BACKSPACE  &kp B                                    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
