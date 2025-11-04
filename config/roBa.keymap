@@ -149,7 +149,7 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp A   &mkp MB1  &mkp MB2  &kp I   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp A   &mkp MB1  &mkp MB2  &kp I   &mo 3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
