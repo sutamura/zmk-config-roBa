@@ -18,10 +18,11 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <
-        17 // J
-        18 // K
-        19 // ;
-        20 // Ctrl
+        17 // ,
+        18 // A
+        19 // E
+        20 // I
+        21 // C
     >;
 };
 
