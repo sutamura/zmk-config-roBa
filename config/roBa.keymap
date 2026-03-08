@@ -48,9 +48,14 @@
             key-positions = <4 3>;
         };
 
-        Escape {
+        EscapeRight {
             bindings = <&kp ESCAPE>;
-            key-positions = <16 17>;
+            key-positions = <29 28>;
+        };
+
+        EscapeLeft {
+            bindings = <&kp ESCAPE>;
+            key-positions = <27 26>;
         };
     };
 
