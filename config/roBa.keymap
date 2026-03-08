@@ -95,10 +95,10 @@
 
         default_layer {
             bindings = <
-&kp F           &kp P      &kp D         &kp L         &kp R                                                                     &kp Z      &kp U    &kp O     &kp Y      &kp Q
-&kp S           &kp N      &kp T         &kp H         &kp K                        &kp C_MUTE                  &kp COMMA        &kp X      &kp A    &kp E     &kp I      &kp C
-&kp V           &kp W      &kp G         &kp M         &kp J                        &kp LA(LC(LEFT_SHIFT))      &kp SEMICOLON    &kp MINUS  &kp DOT  &kp APOS  &kp EQUAL  &lt 3 FSLH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER                 &lt 1 BACKSPACE  &kp B                                    &lt 1 LC(UP_ARROW)
+&kp F           &kp P      &kp D         &kp L         &kp R                                                                     &kp Z      &kp U    &kp O      &kp Y      &kp Q
+&kp S           &kp N      &kp T         &kp H         &kp K                        &kp C_MUTE                  &kp SQT          &kp X      &kp A    &kp E      &kp I      &kp C
+&kp V           &kp W      &kp G         &kp M         &kp J                        &kp LA(LC(LEFT_SHIFT))      &kp SEMICOLON    &kp MINUS  &kp DOT  &kp COMMA  &kp EQUAL  &lt 3 FSLH
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER                 &lt 1 BACKSPACE  &kp B                                     &lt 1 LC(UP_ARROW)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
