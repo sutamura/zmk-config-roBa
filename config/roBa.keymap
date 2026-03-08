@@ -43,19 +43,14 @@
             key-positions = <0 1 2 3 4>;
         };
 
-        LeftClick {
-            bindings = <&mkp MB1>;
-            key-positions = <23 24>;
-        };
-
-        RightClick {
-            bindings = <&mkp MB2>;
-            key-positions = <24 25>;
-        };
-
         CtrlX {
             bindings = <&kp LC(X)>;
-            key-positions = <4 1>;
+            key-positions = <4 3>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
         };
     };
 
