@@ -98,7 +98,7 @@
 &kp F                   &kp P    &kp D  &kp L  &kp X                                                           &kp SEMI     &kp U    &kp O     &kp Y      &kp Q
 &kp S                   &kp N    &kp T  &kp H  &kp K                        &kp C_MUTE        &kp ESCAPE       &lt 3 COMMA  &kp A    &kp E     &kp I      &kp C
 &kp V                   &kp W    &kp G  &kp M  &kp J                        &kp LEFT_GUI      &kp RIGHT_SHIFT  &kp MINUS    &kp DOT  &kp APOS  &kp EQUAL  &kp FSLH
-&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp Z  &kp R  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER       &lt 1 BACKSPACE  &kp B                                      &kp DELETE
+&kp LA(LC(LEFT_SHIFT))  &kp TAB  &kp Z  &kp R  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER       &lt 1 BACKSPACE  &kp B                                      &kp LC(UP_ARROW)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
