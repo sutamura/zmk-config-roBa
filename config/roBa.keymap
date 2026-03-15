@@ -146,10 +146,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans     &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp COMMA  &mkp MB1  &mkp MB2  &kp I   &kp LS(LG(F11))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &mo 3     &trans    &trans  &mo 3
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &to 0     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp X   &mkp MB1  &mkp MB2  &kp I   &kp LS(LG(F11))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mo 3     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
     };
