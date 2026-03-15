@@ -45,12 +45,12 @@
 
         CtrlX {
             bindings = <&kp LC(X)>;
-            key-positions = <17 18>;
+            key-positions = <17 20>;
         };
 
-        EscapeRight {
-            bindings = <&kp ESCAPE>;
-            key-positions = <29 28>;
+        Apos {
+            bindings = <&kp SQT>;
+            key-positions = <30 31>;
         };
 
         EscapeLeft {
@@ -96,7 +96,7 @@
         default_layer {
             bindings = <
 &kp F           &kp P      &kp D         &kp L         &kp R                                                                     &kp Z      &kp U      &kp O       &kp Y      &kp Q
-&kp S           &kp N      &kp T         &kp H         &kp K                        &kp C_MUTE                  &kp SQT          &kp X      &kp A      &kp E       &kp I      &kp C
+&kp S           &kp N      &kp T         &kp H         &kp K                        &kp C_MUTE                  &kp ESCAPE       &kp X      &kp A      &kp E       &kp I      &kp C
 &kp V           &kp W      &kp G         &kp M         &kp J                        &kp LA(LC(LEFT_SHIFT))      &kp SEMICOLON    &kp MINUS  &kp COMMA  &kp PERIOD  &kp EQUAL  &lt 3 FSLH
 &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &holdshift LEFT_SHIFT SPACE  &lt 2 ENTER                 &lt 1 BACKSPACE  &kp B                                        &lt 1 LC(UP_ARROW)
             >;
